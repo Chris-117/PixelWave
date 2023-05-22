@@ -1,0 +1,53 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.8'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'jacoco'
+}
+
+group = 'com.vodafone.fourum'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+}
+
+jar {
+	enabled = false
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.projectlombok:lombok'
+	implementation 'mysql:mysql-connector-java'
+
+	// Spring Security JWT
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.2'
+	implementation 'io.jsonwebtoken:jjwt-impl:0.11.2'
+	implementation 'io.jsonwebtoken:jjwt-jackson:0.11.2'
+
+	// Spring Security BCrypt Password Encoder
+	implementation 'org.springframework.security:spring-security-core'
+	implementation 'org.springframework.security:spring-security-crypto'
+
+	annotationProcessor 'org.immutables:value:2.9.2'
+	compileOnly 'org.immutables:value-annotations:2.9.2'
+	compileOnly 'org.immutables:builder:2.9.2'
+
+	compileOnly 'org.projectlombok:lombok:1.18.26'
+	annotationProcessor 'org.projectlombok:lombok:1.18.26'
+
+	runtimeOnly "com.h2database:h2"
+
+}
+
+jacocoTestReport {
+	dependsOn test
+}
+
