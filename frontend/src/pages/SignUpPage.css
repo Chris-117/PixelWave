@@ -1,0 +1,39 @@
+.login-section {
+    width: 45%;
+    float: left;
+    padding: 20px;
+  }
+  
+  .submit-section {
+    width: 45%;
+    float: right;
+    padding: 20px;
+    margin-bottom: 150px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #8a00fc;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #000000;
+  }
+  

@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  background-color: #c9c9c9;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
