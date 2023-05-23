@@ -6,7 +6,8 @@ All the source code has been provided with commenting, it is recommended to look
 
 # If you wish to run it
 
-- Take the .sql file and run it on //localhost:3306/store_db
+- Take the .sql file and run it on //localhost:3306/store_db username: root  
+  no password
 
 - download the backend and in the root folder Open the terminal of the backend once the database is running and run './gradlew build' followed by running the BackendApiApplication file
 
